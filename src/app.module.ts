@@ -12,6 +12,7 @@ import {
   DATABASE_PASSWORD,
   DATABASE_NAME,
 } from './config/constants';
+import { JugadorModule } from './jugador/jugador.module';
 
 @Module({
   imports: [
@@ -32,6 +33,7 @@ import {
       isGlobal: true,
       envFilePath: '.env',
     }),
+    JugadorModule,
   ],
   controllers: [AppController],
   providers: [AppService],
