@@ -29,4 +29,8 @@ export class CreateJugadorDto {
   @ApiProperty()
   @IsInt({ message: 'El peso es requerido' })
   peso: number;
+
+  @ApiProperty()
+  @IsInt()
+  equipoId: number;
 }

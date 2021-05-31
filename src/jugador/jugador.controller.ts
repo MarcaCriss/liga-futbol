@@ -1,5 +1,3 @@
-import { CreateJugadorDto } from './dtos/create-jugador.dto';
-import { JugadorService } from './jugador.service';
 import {
   Body,
   Controller,
@@ -9,7 +7,8 @@ import {
   Post,
   Put,
 } from '@nestjs/common';
-import { EditJugadorDto } from './dtos';
+import { CreateJugadorDto, EditJugadorDto } from './dtos';
+import { JugadorService } from './jugador.service';
 
 @Controller('jugador')
 export class JugadorController {

@@ -1,9 +1,8 @@
-import { EditJugadorDto } from './dtos/edit-jugador.dto';
-import { CreateJugadorDto } from './dtos/create-jugador.dto';
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { Jugador } from './entities';
+import { CreateJugadorDto, EditJugadorDto } from './dtos';
 
 @Injectable()
 export class JugadorService {
