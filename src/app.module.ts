@@ -27,7 +27,7 @@ import { EquipoModule } from './equipo/equipo.module';
         password: configService.get<string>(DATABASE_PASSWORD),
         database: configService.get<string>(DATABASE_NAME),
         entities: [__dirname + './**/**/*.entity{.ts,.js}'],
-        synchronize: false,
+        synchronize: true,
         autoLoadEntities: true,
       }),
     }),
