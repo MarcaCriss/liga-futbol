@@ -13,6 +13,7 @@ import {
   DATABASE_NAME,
 } from './config/constants';
 import { JugadorModule } from './jugador/jugador.module';
+import { EquipoModule } from './equipo/equipo.module';
 
 @Module({
   imports: [
@@ -35,6 +36,7 @@ import { JugadorModule } from './jugador/jugador.module';
       envFilePath: '.env',
     }),
     JugadorModule,
+    EquipoModule,
   ],
   controllers: [AppController],
   providers: [AppService],
